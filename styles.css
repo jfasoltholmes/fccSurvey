@@ -1,0 +1,65 @@
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+input[type="submit"]:hover {
+  opacity: 1;
+}
+
+.surveyItem {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+label{
+    display: block;
+    margin: 1px 0;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+}
+
+header {
+  background-color: #1b1b32;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #f5f6f7;
+}
+
+form{
+  padding: 20px;
+  margin: 0 auto;
+  width: 50%;
+  background-color: #1b1b32;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 #f5f6f7;
+}
+
+input, textarea, select{
+    background-color: #1b1b32;
+    color: #f5f6f7;
+}

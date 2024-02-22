@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+        <h1 id="title">My Survey Form</h1>
+        <p id="description">This is my short survey form for my FCC project</p>
+    </header>
+    <form id="survey-form">
+        <div class="surveyItem">
+            <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="Please enter your name" required></input></label>
+        </div>
+        <div class="surveyItem">
+            <label for="email" id="email-label">E-Mail: <input id="email" type="email" placeholder="Please enter your E-mail" required></input></label>
+        </div>
+        <div class="surveyItem">
+            <label for="number" id="number-label">Age (Optional): <input id="number" type="number" min="13" max="120" placeholder="Age"></input></label>
+        </div>
+        <div class="surveyItem"> 
+            <label for="dropdown">How did you hear about me?
+                <select id="dropdown" name="dropdown">
+                    <option disabled value="" selected>(select one)</option>
+                    <option value="1">GitHub</option>
+                    <option value="2">LinkedIn</option>
+                    <option value="3">Instagram</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+        </div>
+        <div class="surveyItem">
+            <p>What is your favorite color?</p>
+            <label for="blue"><input id="blue" type="radio" name="favorite_color" value="1" checked/>Blue</label>
+            <label for="green"><input id="green" type="radio" name="favorite_color" value="2"/>Green</label>
+            <label for="purple"><input id="purple" type="radio" name="favorite_color" value="3"/>Purple</label>
+        </div>
+        <div class="surveyItem">
+            <p>Checkboxes!</p>
+            <label><input name="checkboxes" type="checkbox" value="1"/>Checkbox 1</label>
+            <label><input name="checkboxes" type="checkbox" value="2"/>Checkbox 2</label>
+            <label><input name="checkboxes" type="checkbox" value="3"/>Checkbox 3</label>
+            <label><input name="checkboxes" type="checkbox" value="4"/>Checkbox 4</label>
+            <label><input name="checkboxes" type="checkbox" value="5"/>Checkbox 5</label>
+        </div>
+        <div class="surveyItem">
+            <p>How can I make my form better?</p>
+            <textarea id="comments" name="comments" placeholder="I appreciate your feedback!"></textarea>
+        </div>
+        <input type="submit" id="submit"/>
+    </form>
+  </body>
+</html>
